@@ -2,6 +2,9 @@
 
 
 # define a function that takes variable arguments
+# having a first argument it's giving a logical
+# error since not all the number are counting
+# because the first argument is base now
 def addition(base, *args):
     result = 0
     for arg in args:
