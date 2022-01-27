@@ -24,19 +24,26 @@ def main():
 
     # accumulate creates an iterator that accumulates values
     vals = [10,20,30,40,50,40,30]
+    # check all the numbers and stays with the bigger value
     acc = itertools.accumulate(vals, max)
     print(list(acc))
-        
+    # by default accumulate the number
+    acc = itertools.accumulate(vals)
+    print(list(acc))
+
     # use chain to connect sequences together
     x = itertools.chain("ABCD", "1234")
     print(list(x))
-    
+
     # dropwhile and takewhile will return values until
     # a certain condition is met that stops them
+    # dropwhile drop values until the function return
+    # a true, and then return the sequence left
     print(list(itertools.dropwhile(testFunction, vals)))
+    # takewhile return values while is true, and when
+    # it's false, stops returning values
     print(list(itertools.takewhile(testFunction, vals)))
-    
-    
+
+
 if __name__ == "__main__":
     main()
-    
