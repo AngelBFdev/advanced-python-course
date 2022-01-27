@@ -36,6 +36,8 @@ def main():
     grades = (81, 89, 94, 78, 61, 66, 99, 74)
 
     # use filter to remove items from a list
+    # if a function return false filter remove the
+    # element
     odds = list(filter(filterFunc, nums))
     print(odds)
 
