@@ -1,6 +1,7 @@
 # Demonstrate the use of function docstrings
 
-
+# """ are used as the documentation if
+# it's used at the beggining of a function
 def myFunction(arg1, arg2=None):
     """myFunction(arg1, arg2=None) --> Doesn't really do anything special.
 
@@ -12,6 +13,7 @@ def myFunction(arg1, arg2=None):
 
 
 def main():
+    # __doc__ call the documentation of a function
     print(myFunction.__doc__)
 
 
