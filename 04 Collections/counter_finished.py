@@ -27,6 +27,8 @@ def main():
     print(sum(c1.values()), "students in class 1 and 2")
 
     # What's the most common name in the two classes?
+    # the 3 most common
+    # being blank will print them from most to least common
     print(c1.most_common(3))
 
     # Separate the classes again
@@ -34,6 +36,8 @@ def main():
     print(c1.most_common(1))
 
     # What's common between the two classes?
+    # names that shared both class and how many
+    # matches at that name
     print(c1 & c2)
 
 
