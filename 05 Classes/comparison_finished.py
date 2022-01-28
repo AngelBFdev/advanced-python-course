@@ -9,9 +9,13 @@ class Employee():
         self.seniority = yrsService
 
     # implement comparison functions by emp level
+    # this methods are call when a comparison operator
+    # is called (<>=)
     def __ge__(self, other):
         if self.level == other.level:
+            # if they are equal return a value by the seniority
             return self.seniority >= other.seniority
+        # return a value if it's true
         return self.level >= other.level
 
     def __gt__(self, other):
@@ -47,6 +51,8 @@ def main():
     print(bool(dept[4] < dept[3]))
 
     # sort the items
+    # sorted items also apply the comparison
+    # rules from the function
     emps = sorted(dept)
     for emp in emps:
         print(emp.lname)
