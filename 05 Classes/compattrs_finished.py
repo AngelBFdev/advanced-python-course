@@ -8,6 +8,7 @@ class myColor():
         self.blue = 100
 
     # use getattr to dynamically return a value
+    # call when the an attr is requested
     def __getattr__(self, attr):
         if attr == "rgbcolor":
             return (self.red, self.green, self.blue)
@@ -23,11 +24,13 @@ class myColor():
             self.green = val[1]
             self.blue = val[2]
         else:
+            # since you're calling attr, you need to call the
+            # super()
             super().__setattr__(attr, val)
 
     # use dir to list the available properties
     def __dir__(self):
-        return ("rgbolor", "hexcolor")
+        return ("rgbcolor", "hexcolor")
 
 
 def main():
