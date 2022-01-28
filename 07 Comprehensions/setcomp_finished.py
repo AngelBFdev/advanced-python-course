@@ -7,6 +7,7 @@ def main():
 
     # build a set of unique Fahrenheit temperatures
     ftemps1 = [(t * 9/5) + 32 for t in ctemps]
+    # {} is for sets when doesn't have key values
     ftemps2 = {(t * 9/5) + 32 for t in ctemps}
     print(ftemps1)
     print(ftemps2)
