@@ -8,6 +8,7 @@ def main():
 
     # Perform a mapping and filter function on a list
     evenSquared = list(
+        # square of evens between 4-16
         map(lambda e: e**2, filter(lambda e: e > 4 and e < 16, evens)))
     print(evenSquared)
 
