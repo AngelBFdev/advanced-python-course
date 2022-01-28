@@ -8,6 +8,7 @@ def main():
     # Use basicConfig to configure logging
     # this is only executed once, subsequent calls to
     # basicConfig will have no effect
+    # default filemode is append (a)
     logging.basicConfig(level=logging.DEBUG,
                         filemode="w",
                         filename="output.log")

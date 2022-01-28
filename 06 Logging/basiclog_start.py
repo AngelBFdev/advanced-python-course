@@ -1,9 +1,12 @@
 # demonstrate the logging api in Python
 
 # TODO: use the built-in logging module
+import logging
 
 def main():
     # TODO: Use basicConfig to configure logging
+    # this show level DEBUG
+    logging.basicConfig(level=logging.DEBUG)
 
     # Try out each of the log levels
     logging.debug("This is a debug message")
