@@ -1,6 +1,3 @@
-DEBUG:root:This is a debug-level log message
-INFO:root:This is an info-level log message
-WARNING:root:This is a warning-level message
-ERROR:root:This is an error-level message
-CRITICAL:root:This is a critical-level message
-INFO:root:Here's a string variable and an int: 10
+01/28/2022 11:44:41 AM: INFO: main Line:23 User:joem@example.com This is an info-level log message
+01/28/2022 11:44:41 AM: WARNING: main Line:24 User:joem@example.com This is a warning-level message
+01/28/2022 11:44:41 AM: DEBUG: anotherFunction Line:9 User:joem@example.com This is a debug-level log message
