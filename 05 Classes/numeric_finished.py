@@ -9,15 +9,15 @@ class Point():
     def __repr__(self):
         return "<Point x:{0},y:{1}>".format(self.x, self.y)
 
-    # implement addition
+    # implement addition in a function
     def __add__(self, other):
         return Point(self.x + other.x, self.y + other.y)
 
-    # implement subtraction
+    # implement subtraction in a function
     def __sub__(self, other):
         return Point(self.x - other.x, self.y - other.y)
 
-    # implement in-place addition
+    # implement in-place addition in a function
     def __iadd__(self, other):
         self.x += other.x
         self.y += other.y
